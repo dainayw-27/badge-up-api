@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cd /tmp/myApp && node index.js

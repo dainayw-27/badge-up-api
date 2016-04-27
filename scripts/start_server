@@ -1,4 +1,0 @@
-#!/bin/bash
-
-cd /tmp/myApp && npm install
-node index.js &

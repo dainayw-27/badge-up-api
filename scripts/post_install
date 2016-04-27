@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd /tmp/myApp && npm install
+touch /var/log/appserver.log
+chown ec2-user /var/log/appserver.log
+
+service appserver start
