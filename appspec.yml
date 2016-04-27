@@ -5,6 +5,10 @@ files:
     destination: /tmp/myApp
   - source: /scripts/appserver
     destination: /etc/init.d/
+  - source: /scripts/nginx.conf
+    destination: /etc/nginx/
+  - source: /scripts/site.conf
+    destination: /etc/nginx/sites-enabled/
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies

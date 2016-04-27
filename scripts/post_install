@@ -1,5 +1,12 @@
 #!/bin/bash
 
+service nginx restart || service nginx start
+
+# nginx stuff
+mkdir -p /var/log/nginx
+chown ec2-user /var/log/nginx
+chmod -R 755 /var/log/nginx
+
 cd /tmp/myApp && npm install
 touch /var/log/appserver.log
 chown ec2-user /var/log/appserver.log
